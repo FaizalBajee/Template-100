@@ -3,7 +3,7 @@ import React from "react";
 const Step1 = ({ formData, setFormData }) => {
   return (
     <div>
-      <h1>Step 1 - Personal Details</h1>
+      <h1 style={{fontSize:"20px", color:"grey"}}>Step 1 - Personal Details</h1>
       <input
         type="text"
         placeholder="Enter your First Name"
@@ -12,6 +12,7 @@ const Step1 = ({ formData, setFormData }) => {
           setFormData({ ...formData, firstName: e.target.value })
         }
       />
+      <br/>
       <br/>
       <input
         type="text"

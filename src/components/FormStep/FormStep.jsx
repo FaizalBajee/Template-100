@@ -20,10 +20,35 @@ function FormStep() {
   ];
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>Multi Step Form</h1>
-      {steps[step]}
-      <StepNavigation step={step} setStep={setStep} totalStep={steps.length} />
+    <div
+      style={{
+        height: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        background: "linear-gradient(135deg, #667eea, #764ba2)",
+        fontFamily: "Poppins, sans-serif",
+      }}
+    >
+      <div
+        style={{
+          background: "#fff",
+          borderRadius: "12px",
+          boxShadow: "0 6px 20px rgba(0,0,0,0.15)",
+          padding: "30px",
+          width: "360px",
+          textAlign: "center",
+        }}
+      >
+        <h1>Multi Step Form</h1>
+        {steps[step]}
+        <br></br>
+        <StepNavigation
+          step={step}
+          setStep={setStep}
+          totalStep={steps.length}
+        />
+      </div>
     </div>
   );
 }
