@@ -21,6 +21,9 @@ function Home() {
       }}
     >
       <button onClick={handleOpen}>open Multi Step Form</button>
+      <br>
+      </br>
+      <button onClick={()=> navigate('/progress')}>open Progress Bar</button>
     </div>
   );
 }
