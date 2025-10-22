@@ -1,16 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-
 function Home() {
-
-    const navigate = useNavigate();
-
-
-    const handleOpen = () => {
-        console.log("first")
-        navigate('/form')
-    }
+  const navigate = useNavigate();
   return (
     <div
       style={{
@@ -20,10 +12,13 @@ function Home() {
         height: "100vh",
       }}
     >
-      <button onClick={handleOpen}>open Multi Step Form</button>
-      <br>
-      </br>
-      <button onClick={()=> navigate('/progress')}>open Progress Bar</button>
+      <button onClick={() => navigate("/form")}>open Multi Step Form</button>
+      <br></br>
+      <button onClick={() => navigate("/progress")}>open Progress Bar</button>
+      <br></br>
+      <button onClick={() => navigate("/Sidebar")}>open Side Bar</button>
+      <br></br>
+      <button onClick={() => navigate("/multiTabs")}>open Multi Tabs</button>
     </div>
   );
 }
