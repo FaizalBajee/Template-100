@@ -2,14 +2,15 @@ import React, { Component, useState } from "react";
 import Profile from "./components/Profile";
 import Interest from "./components/Interest";
 import Setting from "./components/Setting";
+import Buttons from "./components/Buttons";
 
 export default function MultiTabs() {
   const [data, setData] = useState({
-    name:"",
-    age:"",
-    email:"",
-    interest:["backEnd"],
-    setting:""
+    name: "",
+    age: "",
+    email: "",
+    interest: ["backEnd"],
+    setting: "",
   });
   const [activetab, setActivetab] = useState(0);
   const Tab = [
@@ -72,9 +73,16 @@ export default function MultiTabs() {
           width: "500px",
           height: "200px",
           marginLeft: "40px",
+          position: "relative",
         }}
       >
-        <ActiveTab />
+        <div>
+          <ActiveTab data={data} setData={setData} />
+        </div>
+
+        <div style={{ position: "absolute", bottom: "20px", right: "6px" }}>
+          <Buttons step={activetab} setStep={setActivetab} total={Tab.length} />
+        </div>
       </div>
     </div>
   );
