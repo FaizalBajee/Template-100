@@ -1,24 +1,19 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import Cards from "./Cards/Cards";
+import "./home.css";
 
 function Home() {
-  const navigate = useNavigate();
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-      }}
-    >
-      <button onClick={() => navigate("/form")}>open Multi Step Form</button>
-      <br></br>
-      <button onClick={() => navigate("/progress")}>open Progress Bar</button>
-      <br></br>
-      <button onClick={() => navigate("/Sidebar")}>open Side Bar</button>
-      <br></br>
-      <button onClick={() => navigate("/multiTabs")}>open Multi Tabs</button>
+    <div className="container">
+      <h1 className="header">No AI, Just Me and My Brain </h1>
+      <h1 className="header">Ctrl + Alt + think </h1>
+      <div className="cardContainer">
+        <Cards endPoint="/Sidebar" header="Open Side Bar" />
+        <Cards endPoint="/multiTabs" header="Open Multi Tabs" />
+        <Cards endPoint="/progress" header="Open Progress Bar" />
+        <Cards endPoint="/form" header="Open Multi Step Form" />
+        <Cards endPoint="/pagination" header="Open Pagination" />
+      </div>
     </div>
   );
 }

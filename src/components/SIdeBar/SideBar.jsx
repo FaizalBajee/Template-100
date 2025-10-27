@@ -42,7 +42,7 @@ const SideBar = () => {
         <h1>Side Bar</h1>
       </div>
 
-      <div style={{ marginLeft: "20px", marginTop: "20px",paddingTop:"30px" ,width:"200px",border:"1px solid black",borderRadius:"20px" , height:"80vh"}}>
+      <div style={{ marginLeft: "20px", marginTop: "20px",paddingTop:"30px" ,width:"200px",border:"1px solid white",borderRadius:"20px" , height:"80vh"}}>
         <List data={data} />
       </div>
     </div>

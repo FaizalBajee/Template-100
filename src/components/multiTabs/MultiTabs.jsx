@@ -56,7 +56,7 @@ export default function MultiTabs() {
             <span
               style={{
                 cursor: "pointer",
-                border: "1px solid black",
+                border: "1px solid white",
                 borderRadius: "10px",
                 padding: "10px",
               }}
@@ -69,7 +69,7 @@ export default function MultiTabs() {
       </div>
       <div
         style={{
-          border: "1px solid black",
+          border: "1px solid white",
           width: "500px",
           height: "200px",
           marginLeft: "40px",

@@ -1,0 +1,21 @@
+.container {
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  /* gap: 20px;
+    flex-wrap: wrap;
+    height: 100vh; */
+  /* background: #f5f6fa; */
+}
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  height: 80vh;
+}
+.header {
+  fontsize: 20px;
+  color: gray;
+}

@@ -2,5 +2,6 @@
   "form": "/form",
   "progress": "/progress",
   "sideBar": "/sideBar",
-  "multiTabs":"/multiTabs"
+  "multiTabs":"/multiTabs",
+  "pagination":"/pagination"
 }

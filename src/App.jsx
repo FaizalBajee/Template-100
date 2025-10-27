@@ -6,6 +6,8 @@ import ProgressBar from "./components/ProgressBar/ProgressBar";
 import routerPath from "../src/routingPath.json";
 import SideBar from "./components/SIdeBar/SideBar";
 import MultiTabs from "./components/multiTabs/MultiTabs";
+import Pagination from "./components/pagination/Pagination";
+import "./App.css";
 function App() {
 
   return (
@@ -16,6 +18,7 @@ function App() {
         <Route path={routerPath.progress} element={<ProgressBar />} />
         <Route path={routerPath.sideBar} element={<SideBar />} />
         <Route path={routerPath.multiTabs} element={<MultiTabs />} />
+        <Route path={routerPath.pagination} element={<Pagination />} />
       </Routes>
     </BrowserRouter>
 
